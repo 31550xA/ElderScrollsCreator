@@ -1,10 +1,11 @@
 # ElderScrollsCreator
 Creates characters for Elder Scrolls Games.
 
-## Type stuff.
+## How to Use
 
-Some things.
+Clone the repository to your device using:
 
 ``` 
-CODE
+git clone http://www.github.com/31550xA/ElderScrollsCreator/ 
+
 ```
