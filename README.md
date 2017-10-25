@@ -1,2 +1,2 @@
 # ElderScrollsCreator
-Creates characters for Elder Scrolls Games
+Creates characters for Elder Scrolls Games.
