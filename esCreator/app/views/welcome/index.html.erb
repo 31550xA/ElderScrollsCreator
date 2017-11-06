@@ -1,15 +1,36 @@
-<div class="container">
+<div class="col-lg-12">
 
 
 <h1>Elder Scrolls Character Creator</h1>
-<%= image_tag("ESLogo.png", :alt => "ES logo") %>
+<%= image_tag("ESLogo.png", :alt => "ES logo", :width => "1500px") %>
 
 <div>
   <div class="col-lg-6">
-    <button class="btn btn-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in | Sign up</button>
+    <button class="btn btn-lg btn-primary" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Log in</button>
+<%= link_to 'Sign Up', "#", data: {toggle: "modal", target: "#modal"} %>
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   </div>
   <div class="col-lg-6">
-    <button class="btn btn-primary">Create as Guest</button>
+    <button class="btn btn-lg btn-primary">Create as Guest</button>
   </div>
 </div>
 </div>
