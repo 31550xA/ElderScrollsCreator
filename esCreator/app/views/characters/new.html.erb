@@ -1,5 +1,9 @@
+<!-- Navbar -->
+<%= navbar fixed: :top do %>
+<%= navbar_header brand: 'ESCreator', brand_link: '/home'%>
+<!-- End navbar -->
 <h1>New Character</h1>
 
 <%= render 'form' %>
- 
+
 <%= link_to 'Back', character_path %>
