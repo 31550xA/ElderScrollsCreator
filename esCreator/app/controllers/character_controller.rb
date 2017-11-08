@@ -1,4 +1,4 @@
-class CharactersController < ApplicationController
+class CharacterController < ApplicationController
     def new
         @character = Character.new
     end
@@ -50,4 +50,3 @@ private
     def character_params
         params.require(:character).permit(:name,:race, :characterID)
     end
-end
