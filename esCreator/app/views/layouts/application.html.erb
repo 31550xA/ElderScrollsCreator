@@ -11,8 +11,10 @@
   <body>
     <!-- Navbar -->
     <%= navbar fixed: :top do %>
-    <%= navbar_header brand: 'ESCreator', brand_link: '/home'%>
+    <%= navbar_header brand: 'ESCreator', brand_link: '/' %>
+    <% end %>
     <!-- End navbar -->
     <%= yield %>
+
   </body>
 </html>
