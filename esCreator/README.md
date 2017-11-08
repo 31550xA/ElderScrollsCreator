@@ -1,24 +1,49 @@
-# README
+# esCreator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+These are the steps necessary to get the rails app up and running on your machine.
 
-Things you may want to cover:
+About the app:
 
-* Ruby version
+* Ruby version:
 
-* System dependencies
+```
+2.4.2p198
+```
 
-* Configuration
+* How to run the test suite:
 
-* Database creation
+```
+We will get here sooner than later.
+```
 
-* Database initialization
+# How to run the app:
 
-* How to run the test suite
+Clone the repository:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+git clone http://www.github.com/31550xA/ElderScrollsCreator/
+```
+Get into the esCreator directory:
 
-* Deployment instructions
+```
+cd /ElderScrollsCreator/esCreator
+```
 
-* ...
+Run the necessary commands to install all dependencies:
+
+```
+gem install bundler
+bundle install
+```
+
+Run the Rails server:
+
+```
+rails s
+```
+
+You can now view the app at:
+
+```
+0.0.0.0:3000
+```
