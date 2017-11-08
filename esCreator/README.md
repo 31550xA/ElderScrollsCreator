@@ -1,49 +1,5 @@
 # esCreator
 
-These are the steps necessary to get the rails app up and running on your machine.
+Please see the link for full documentation for our app:
 
-About the app:
-
-* Ruby version:
-
-```
-2.4.2p198
-```
-
-* How to run the test suite:
-
-```
-We will get here sooner than later.
-```
-
-# How to run the app:
-
-Clone the repository:
-
-```
-git clone http://www.github.com/31550xA/ElderScrollsCreator/
-```
-Get into the esCreator directory:
-
-```
-cd /ElderScrollsCreator/esCreator
-```
-
-Run the necessary commands to install all dependencies:
-
-```
-gem install bundler
-bundle install
-```
-
-Run the Rails server:
-
-```
-rails s
-```
-
-You can now view the app at:
-
-```
-localhost:3000
-```
+https://31550xa.github.io/ElderScrollsCreator/
