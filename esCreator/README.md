@@ -45,5 +45,5 @@ rails s
 You can now view the app at:
 
 ```
-0.0.0.0:3000
+localhost:3000
 ```
