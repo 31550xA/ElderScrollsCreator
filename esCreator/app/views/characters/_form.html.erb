@@ -21,12 +21,13 @@
   
   <p>
       <%= f.label :gender %><br>
-      <!-- needs to be drop down selector or radio -->
+      <%= f.select :gender, [['Man', 'man'],['Woman', 'woman']], :include_blank => true %>
+      
   </p>
  
   <p>
     <%= f.label :race %><br>
-    <!--<%= f.text_area :text %> Needs to be dropdown!-->
+    <%= f.select :race, [['Ork', 'ork'],['Wood Elf', 'wood elf'],['Imperial', 'imperial']], :include_blank => true %>
   </p>
  
   <p>
