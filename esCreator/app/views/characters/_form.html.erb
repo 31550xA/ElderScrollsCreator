@@ -1,5 +1,5 @@
 <%= form_for @character do |f| %>
- 
+
   <% if @character.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -13,25 +13,26 @@
       </ul>
     </div>
   <% end %>
- 
+
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </p>
-  
+
   <p>
       <%= f.label :gender %><br>
       <%= f.select :gender, [['Man', 'man'],['Woman', 'woman']], :include_blank => true %>
-      
+
   </p>
- 
+
   <p>
     <%= f.label :race %><br>
     <%= f.select :race, [['Ork', 'ork'],['Wood Elf', 'wood elf'],['Imperial', 'imperial']], :include_blank => true %>
   </p>
- 
+
   <p>
     <%= f.submit %>
+    <%= link_to 'Back', characters_path, :class => 'btn btn-lg btn-primary' %>
   </p>
- 
+
 <% end %>
