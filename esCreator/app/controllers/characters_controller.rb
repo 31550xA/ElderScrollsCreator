@@ -39,7 +39,7 @@ class CharactersController < ApplicationController
 
         if @character.save
 
-            redirect_to @character
+            redirect_to @characters
         else
             render 'new'
         end
