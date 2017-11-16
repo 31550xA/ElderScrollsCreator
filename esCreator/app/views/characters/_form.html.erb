@@ -21,19 +21,19 @@
 
 <p>
   <%= f.label :gender %><br>
-  <%= f.select :gender, [['Man', 'man'],['Woman', 'woman'],['Androgenous', 'androgenous']], :include_blank => true %>
+  <%= f.select :gender, [['Man', 'man'],['Woman', 'woman'],['Androgenous', 'androgenous']], { class: "form form-group form-control" }, :include_blank => true %>
 
 </p>
 
 <p>
   <%= f.label :race %>
   <br>
-  <%= f.select :race, [['Ork', 'ork'],['Wood Elf', 'wood elf'],['Imperial', 'imperial']], :include_blank => true %>
+  <%= f.select :race, [['Ork', 'ork'],['Wood Elf', 'wood elf'],['Imperial', 'imperial']], { class: "dropdown btn btn-secondary dropdown-toggle" }, :include_blank => true %>
 </p>
 
 <p>
   <%= f.submit 'Create Character', :class => 'btn btn-lg btn-success' %>
-  
+
 </p>
 
 <% end %>
