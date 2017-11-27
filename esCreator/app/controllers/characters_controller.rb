@@ -39,11 +39,7 @@ class CharactersController < ApplicationController
 
         if @character.save
 
-<<<<<<< HEAD
-            redirect_to @character
-=======
-            redirect_to index_characters_path
->>>>>>> d6fa7f62746c08c2708b917da725b61cb652a02f
+            redirect_to character_path
         else
             render 'new'
         end
@@ -52,5 +48,5 @@ end
 
 private
     def character_params
-        params.require(:character).permit(:name,:race,:gender, :characterID)
+        params.require(:character).permit(:name,:race,:gender)
     end
