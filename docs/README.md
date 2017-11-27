@@ -50,3 +50,15 @@ You can now view the app at:
 ```
 localhost:3000
 ```
+# ~CURRENT FEATURES!~
+
+-Guest user access
+-User-inputted parameters for character attributes
+-Character class selection
+-Class validation using images
+
+# ~FEATURES YET TO COME!~
+
+-Ability to save character to database for future alterations/use
+-Log-in capability and complete user authentification
+-Create Account capability 
