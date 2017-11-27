@@ -30,7 +30,7 @@ class CharactersController < ApplicationController
         @character = Character.find(params[:id])
         @character.destroy
 
-        redirect_to character_path
+        redirect_to characters_path
     end
 
     def create
@@ -39,7 +39,11 @@ class CharactersController < ApplicationController
 
         if @character.save
 
+<<<<<<< HEAD
+            redirect_to @character
+=======
             redirect_to index_characters_path
+>>>>>>> d6fa7f62746c08c2708b917da725b61cb652a02f
         else
             render 'new'
         end
