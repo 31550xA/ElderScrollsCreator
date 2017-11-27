@@ -16,7 +16,7 @@ About the app:
 * How to run the test suite:
 
 ```
-We will get here sooner than later.
+cucumber
 ```
 
 # How to run the app:
