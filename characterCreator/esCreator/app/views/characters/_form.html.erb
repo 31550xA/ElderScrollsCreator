@@ -1,0 +1,40 @@
+<%= form_for @character do |f| %>
+
+<% if @character.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@character.errors.count, "error") %>
+      prohibited this character from being saved:
+    </h2>
+    <ul>
+      <% @character.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<p>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.label :gender %><br>
+  <%= f.select :gender, [['Man', 'man'],['Woman', 'woman'],['Androgenous', 'androgenous']['Stove', 'stove']['Apache Attack Helicopter', 'apacheattackhelicopter']], { class: "form form-group form-control" }, :include_blank => true %>
+
+
+</p>
+
+<p>
+  <%= f.label :race %>
+  <br>
+  <%= f.select :race, [['Ork', 'ork'],['Wood Elf', 'wood elf'],['Imperial', 'imperial']], { class: "dropdown btn btn-secondary dropdown-toggle" }, :include_blank => true %>
+</p>
+
+<p>
+  <%= f.submit 'Create Character', :class => 'btn btn-lg btn-success' %>
+
+</p>
+
+<% end %>

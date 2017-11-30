@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EsCreator</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <%= navbar fixed: :top do %>
+    <%= navbar_header brand: 'ESCreator', brand_link: '/' %>
+    <% end %>
+    <!-- End navbar -->
+    <%= yield %>
+
+  </body>
+</html>

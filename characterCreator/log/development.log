@@ -1,0 +1,408 @@
+Started GET "/" for 173.92.45.65 at 2017-11-30 04:57:48 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 899ms (Views: 729.8ms)
+
+
+Started GET "/characters/new" for 173.92.45.65 at 2017-11-30 04:57:52 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NameError (uninitialized constant CharactersController::Character):
+  
+app/controllers/characters_controller.rb:7:in `new'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateCharacters (20171130045952)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "characters" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "gender" varchar, "race" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171130045952"]]
+  [1m[35m (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-30 05:00:26.364746"], ["updated_at", "2017-11-30 05:00:26.364746"]]
+  [1m[35m (6.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 173.92.45.65 at 2017-11-30 05:02:50 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 277ms (Views: 269.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 173.92.45.65 at 2017-11-30 05:02:52 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+Completed 406 Not Acceptable in 29ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionController::UnknownFormat (CharactersController#new is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.4) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.4) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.4) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.4) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.4) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.4) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.4) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.4) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.4) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 173.92.45.65 at 2017-11-30 05:07:11 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 256ms (Views: 248.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 173.92.45.65 at 2017-11-30 05:07:13 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (137.4ms)
+  Rendered characters/new.html.erb within layouts/application (138.8ms)
+Completed 200 OK in 167ms (Views: 156.8ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/characters" for 173.92.45.65 at 2017-11-30 05:07:22 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"O0SvRFB9Zc/BY2Hl5QmLpPq3QDWXOKRJ4hBdVtAjoAYbHSbWFhvi8i2jkB2MOiUCg2x3SltMi8vYKaP6YQ3wfA==", "character"=>{"name"=>"", "gender"=>"Man", "race"=>"khajit"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "gender", "race", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", ""], ["gender", "Man"], ["race", "khajit"], ["created_at", "2017-11-30 05:07:22.013089"], ["updated_at", "2017-11-30 05:07:22.013089"]]
+  [1m[35m (17.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-bthomp57.c9users.io/characters
+Completed 302 Found in 149ms (ActiveRecord: 18.4ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 05:07:22 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/characters/1" for 173.92.45.65 at 2017-11-30 05:07:34 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"tHyUkg+UabD3wV/3/r57vW08CWIqSy6FX7RAeojgrzPNbcc1cbF4E2m43nouPlPv9h/7QtIyNHXDeujRXR3UYg==", "id"=>"1"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "characters" WHERE "characters"."id" = ?[0m  [["id", 1]]
+  [1m[35m (6.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-bthomp57.c9users.io/characters
+Completed 302 Found in 15ms (ActiveRecord: 7.5ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 05:07:34 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 173.92.45.65 at 2017-11-30 05:10:28 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 240ms (Views: 232.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 173.92.45.65 at 2017-11-30 05:10:31 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (130.9ms)
+  Rendered characters/new.html.erb within layouts/application (132.2ms)
+Completed 200 OK in 164ms (Views: 154.0ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/characters" for 173.92.45.65 at 2017-11-30 05:10:38 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9kcPD5SQApCwk0R+XfnCLLiABZ0jaFpb30hWICGjh9TWHoad0vaFrVxTtYY0ymyKwVsy4u8cddnlcaiMkI3Xrg==", "character"=>{"name"=>"", "race"=>"orsimer"}, "commit"=>"Create Character"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (162.4ms)
+  Rendered characters/new.html.erb within layouts/application (164.3ms)
+Completed 200 OK in 241ms (Views: 233.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/characters" for 173.92.45.65 at 2017-11-30 05:10:57 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IrV5k/cYaSWaK7xTIUcFCuJKLgaFyqnHu6GwmVl2DFZbpCo0iT14hgRSPd7xxy1YeWncJn2zszcnbxgyjIt3Bw==", "character"=>{"name"=>"test1", "gender"=>"Man", "race"=>"orsimer"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "characters" ("name", "gender", "race", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test1"], ["gender", "Man"], ["race", "orsimer"], ["created_at", "2017-11-30 05:10:57.974609"], ["updated_at", "2017-11-30 05:10:57.974609"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-bthomp57.c9users.io/characters
+Completed 302 Found in 187ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 05:10:58 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters/2" for 173.92.45.65 at 2017-11-30 05:11:05 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCharacter Load (0.7ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 73ms (Views: 63.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 05:11:08 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.2ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 190ms (Views: 188.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/characters/2/edit" for 173.92.45.65 at 2017-11-30 05:11:09 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering characters/edit.html.erb within layouts/application
+  Rendered characters/_form.html.erb (3.6ms)
+  Rendered characters/edit.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 05:11:11 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateSkillsets (20171130053624)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "skillsets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "character_id" integer, "block" integer, "heavyArmor" integer, "oneHanded" integer, "smithing" integer, "twoHanded" integer, "archery" integer, "alchemy" integer, "lightArmor" integer, "lockPicking" integer, "pickPocket" integer, "sneak" integer, "speech" integer, "alteration" integer, "conjuration" integer, "destruction" integer, "enchanting" integer, "illusion" integer, "restoration" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, CONSTRAINT "fk_rails_04ff283f87"
+FOREIGN KEY ("character_id")
+  REFERENCES "characters" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_skillsets_on_character_id" ON "skillsets" ("character_id")[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20171130053624"]]
+  [1m[35m (9.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_skillsets_on_character_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_skillsets_on_character_id' AND type='index'
+[0m
+Started GET "/" for 173.92.45.65 at 2017-11-30 06:14:18 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 304ms (Views: 296.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 173.92.45.65 at 2017-11-30 06:14:21 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (98.5ms)
+  Rendered characters/new.html.erb within layouts/application (99.9ms)
+Completed 200 OK in 177ms (Views: 162.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/characters" for 173.92.45.65 at 2017-11-30 06:14:34 +0000
+Cannot render console from 173.92.45.65! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 112ms (Views: 109.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-30 14:52:26 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 9653ms (Views: 9640.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-30 14:55:47 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (10.0ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "ESLogo.png" is not present in the asset pipeline.):
+    2: 
+    3:   <h1>Elder Scrolls Character Creator</h1>
+    4: 
+    5:   <%= image_tag("ESLogo.png", :alt => "ES logo", :width => "1300px") %>
+    6: 
+    7:   <div>
+    8:     <div class="col-lg-6">
+  
+app/views/welcome/index.html.erb:5:in `_app_views_welcome_index_html_erb___121747072533598169_70112779549400'
+Started GET "/" for 127.0.0.1 at 2017-11-30 14:56:20 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (457.5ms)
+Completed 500 Internal Server Error in 465ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `new_characters_path' for #<#<Class:0x00007f88c72d70b0>:0x00007f88cec0ee38>
+Did you mean?  new_character_path
+               new_character_url):
+    31:     </div>
+    32:     <div class="col-lg-6">
+    33: 
+    34:           <%= link_to 'Create as Guest', new_characters_path, :class => 'btn btn-lg btn-primary' %>
+    35: 
+    36: 
+    37:     </div>
+  
+app/views/welcome/index.html.erb:34:in `_app_views_welcome_index_html_erb___121747072533598169_70112780516320'
+Started GET "/" for 127.0.0.1 at 2017-11-30 14:58:01 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-11-30 14:58:04 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (69.9ms)
+  Rendered characters/new.html.erb within layouts/application (72.1ms)
+Completed 200 OK in 108ms (Views: 93.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-11-30 14:58:22 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DPdmbYtg8PqWKYChRPBcLrRp1Srncn3evlylMpiWiTgshQtixb1YOQkXSwWOoUQrVUimn4KszRiSDn/GCpXtzQ==", "character"=>{"name"=>"", "gender"=>"Apache Attack Helicopter", "race"=>"altmer"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (3.0ms)
+  Rendered characters/new.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 35ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-11-30 14:58:33 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rm3yDPdBhsQ+UX0ck2Lm4QeyGMN2DMfV7bLSJ929hF3sOA83aCDyu2m7nAbcGUT8cc63k59bGNZj456iKJJdGg==", "character"=>{"name"=>"GORGONZOLA", "gender"=>"Apache Attack Helicopter", "race"=>"altmer"}, "commit"=>"Create Character"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "characters" ("name", "gender", "race", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "GORGONZOLA"], ["gender", "Apache Attack Helicopter"], ["race", "altmer"], ["created_at", "2017-11-30 19:58:33.734464"], ["updated_at", "2017-11-30 19:58:33.734464"]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/characters
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/characters" for 127.0.0.1 at 2017-11-30 14:58:33 -0500
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.1ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.1ms)
+
+

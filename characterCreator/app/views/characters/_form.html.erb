@@ -1,0 +1,71 @@
+<%= form_for @character do |f| %>
+
+<% if @character.errors.any? %>
+  <div id="error_explanation">
+    <h2>
+      <%= pluralize(@character.errors.count, "error") %>
+      prohibited this character from being saved:
+    </h2>
+    <ul>
+      <% @character.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+
+<p>
+  <%= f.radio_button :gender, 'Androgynous' %>
+  <%= f.label :gender, 'Androgynous', :value => 'Androgynous' %>
+  <%= f.radio_button :gender, 'Man' %>
+  <%= f.label :gender, 'Man', :value => 'Man' %>
+  <%= f.radio_button :gender, 'Woman' %>
+  <%= f.label :gender, 'Woman', :value => 'Woman' %>
+  <%= f.radio_button :gender, 'Apache Attack Helicopter' %>
+  <%= f.label :gender, 'Apache Attack Helicopter', :value => 'Apache Attack Helicopter' %>
+</p>
+
+<p>
+  <%= f.radio_button :race, 'altmer' %>
+  <%= f.label :race, 'Altmer (High Elf)', :value => 'altmer' %><br>
+
+  <%= f.radio_button :race, 'argonian' %>
+  <%= f.label :race, 'Argonian', :value => 'argonian' %><br>
+
+  <%= f.radio_button :race, 'breton' %>
+  <%= f.label :race, 'Breton', :value => 'breton' %><br>
+
+  <%= f.radio_button :race, 'bosmer' %>
+  <%= f.label :race, 'Bosmer (Wood Elf)', :value => 'bosmer' %><br>
+
+  <%= f.radio_button :race, 'dunmer' %>
+  <%= f.label :race, 'Dunmer (Dark Elf)', :value => 'dunmer' %><br>
+
+  <%= f.radio_button :race, 'imperial' %>
+  <%= f.label :race, 'Imperial', :value => 'imperial' %><br>
+
+  <%= f.radio_button :race, 'khajit' %>
+  <%= f.label :race, 'Khajit', :value => 'khajit' %><br>
+
+  <%= f.radio_button :race, 'nord' %>
+  <%= f.label :race, 'Nord', :value => 'nord' %><br>
+
+  <%= f.radio_button :race, 'redguard' %>
+  <%= f.label :race, 'Redguard', :value => 'redguard' %><br>
+
+  <%= f.radio_button :race, 'orsimer' %>
+  <%= f.label :race, 'Orsimer (Ork)', :value => 'orsimer' %><br>
+
+
+</p>
+
+<p>
+  <%= f.submit 'Create Character'%>
+</p>
+
+<% end %>
