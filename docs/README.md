@@ -2,6 +2,26 @@
 
 Creates characters for Elder Scrolls Games.
 
+## Current Features
+
+* Guest user access
+
+* User-assigned parameters for character attributes
+
+* Character class selection
+
+* Class validation using images
+
+## Future Features
+
+* Ability to save character to database for future alterations/use
+
+* Log-in capability and complete user authentication
+
+* Create Account capability
+
+* Additional perks and specific skills earned
+
 ## How to Use:
 
 These are the steps necessary to get the rails app up and running on your machine.
@@ -51,22 +71,3 @@ You can now view the app at:
 ```
 localhost:3000
 ```
-## Current Features
-
-* Guest user access
-
-* User-assigned parameters for character attributes
-
-* Character class selection
-
-* Class validation using images
-
-## Future Features
-
-* Ability to save character to database for future alterations/use
-
-* Log-in capability and complete user authentication
-
-* Create Account capability
-
-* Additional perks and specific skills earned 
