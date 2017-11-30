@@ -1,7 +1,8 @@
 # ElderScrollsCreator
+
 Creates characters for Elder Scrolls Games.
 
-## How to Use
+## How to Use:
 
 These are the steps necessary to get the rails app up and running on your machine.
 
@@ -19,7 +20,7 @@ About the app:
 cucumber
 ```
 
-# How to run the app:
+## How to run the app:
 
 Clone the repository:
 
@@ -50,20 +51,20 @@ You can now view the app at:
 ```
 localhost:3000
 ```
-# CURRENT FEATURES!
+## Current Features
 
--Guest user access
+* Guest user access
 
--User-inputted parameters for character attributes
+* User-assigned parameters for character attributes
 
--Character class selection
+* Character class selection
 
--Class validation using images
+* Class validation using images
 
-# FEATURES YET TO COME!
+## Future Features
 
--Ability to save character to database for future alterations/use
+* Ability to save character to database for future alterations/use
 
--Log-in capability and complete user authentification
+* Log-in capability and complete user authentication
 
--Create Account capability 
+* Create Account capability
