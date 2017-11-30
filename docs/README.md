@@ -68,3 +68,5 @@ localhost:3000
 * Log-in capability and complete user authentication
 
 * Create Account capability
+
+* Additional perks and specific skills earned 
