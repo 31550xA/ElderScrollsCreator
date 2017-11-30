@@ -406,3 +406,44 @@ Processing by CharactersController#index as HTML
 Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/characters" for 127.0.0.1 at 2017-11-30 15:56:41 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (18.9ms)
+Completed 200 OK in 593ms (Views: 573.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/characters/3" for 127.0.0.1 at 2017-11-30 15:56:47 -0500
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 45ms (Views: 37.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters" for 127.0.0.1 at 2017-11-30 15:56:56 -0500
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.5ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 39ms (Views: 35.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-30 15:57:02 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-11-30 15:57:11 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (85.5ms)
+  Rendered characters/new.html.erb within layouts/application (88.4ms)
+Completed 200 OK in 114ms (Views: 111.9ms | ActiveRecord: 0.0ms)
+
+
