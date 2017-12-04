@@ -1993,3 +1993,412 @@ app/views/skillsets/_form.html.erb:3:in `_app_views_skillsets__form_html_erb___2
 app/views/characters/_form.html.erb:67:in `block in _app_views_characters__form_html_erb__3911218023035054062_69928246109400'
 app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb__3911218023035054062_69928246109400'
 app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb__3186629002946762857_69928614620320'
+Started GET "/" for 152.15.113.5 at 2017-12-04 17:55:35 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (411.5ms)
+Completed 200 OK in 636ms (Views: 622.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 17:55:38 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (142.9ms)
+  Rendered characters/new.html.erb within layouts/application (146.0ms)
+Completed 200 OK in 244ms (Views: 203.0ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-04 17:55:44 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 165ms (Views: 161.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for 152.15.113.5 at 2017-12-04 17:55:47 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#index as HTML
+  Rendering races/index.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered races/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 162ms (Views: 157.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races/new" for 152.15.113.5 at 2017-12-04 17:55:52 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#new as HTML
+  Rendering races/new.html.erb within layouts/application
+  Rendered races/_form.html.erb (7.1ms)
+  Rendered races/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 197ms (Views: 195.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for 152.15.113.5 at 2017-12-04 17:55:54 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#index as HTML
+  Rendering races/index.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered races/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 161ms (Views: 159.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-04 17:55:56 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 52ms (Views: 49.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 152.15.113.5 at 2017-12-04 18:13:03 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (284.9ms)
+Completed 200 OK in 423ms (Views: 415.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:13:06 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (4.1ms)
+  Rendered characters/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 1.2ms)
+
+
+  
+SyntaxError (/home/ubuntu/workspace/ElderScrollsCreator/characterCreator/app/views/characters/_form.html.erb:76: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/home/ubuntu/workspace/ElderScrollsCreator/characterCreator/app/views/characters/_form.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+/home/ubuntu/workspace/ElderScrollsCreator/characterCreator/app/views/characters/_form.html.erb:80: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/characters/_form.html.erb:76: syntax error, unexpected keyword_end, expecting ')'
+app/views/characters/_form.html.erb:78: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/characters/_form.html.erb:80: syntax error, unexpected keyword_end, expecting ')'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037477712160'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:14:13 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "races"."name" FROM "races"[0m
+  Rendered characters/_form.html.erb (211.3ms)
+  Rendered characters/new.html.erb within layouts/application (213.2ms)
+Completed 500 Internal Server Error in 218ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for nil:NilClass):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.select(:race_id, Race.all.pluck(:name), @character.race) %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037497280980'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037497280980'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037479645860'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:18:17 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (5.6ms)
+  Rendered characters/new.html.erb within layouts/application (6.9ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.collection_select :race_id, Race.all(:name), @character.race %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037365336440'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037365336440'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037365117080'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:19:49 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (5.0ms)
+  Rendered characters/new.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 3, expected 4..6)):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.collection_select :race_id, Race.all, :name %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037226524080'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037226524080'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037226467420'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:20:17 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (14.3ms)
+  Rendered characters/new.html.erb within layouts/application (15.7ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `race_id' for #<Character:0x007f65be3c96c0>
+Did you mean?  race):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.collection_select :race_id, Race.all, :id, :name %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_26960500'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_26960500'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037480030380'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:20:37 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (293.3ms)
+  Rendered characters/new.html.erb within layouts/application (294.7ms)
+Completed 500 Internal Server Error in 298ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `race' for #<#<Class:0x007f65bdf41f58>:0x007f65b0306b60>):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.collection_select :race_id, race.all, :id, :name %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037361545980'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037361545980'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037362195100'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:22:29 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (21.7ms)
+  Rendered characters/new.html.erb within layouts/application (23.7ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `race_id' for #<Character:0x007f65be4244f8>
+Did you mean?  race):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= f.collection_select :race_id, Race.all, :id, :name %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037364084740'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037364084740'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037365241760'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:27:35 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (5.9ms)
+  Rendered characters/new.html.erb within layouts/application (7.3ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= options_from_collection_for_select(@races, 'id', 'name', @selected.id) %>
+    70: </p>
+    71: 
+    72: <p>
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb___3762140163819285931_70037295248340'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb___3762140163819285931_70037295248340'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___3937325739810126309_70037295163280'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 18:28:55 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (4.8ms)
+  Rendered characters/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 133ms (Views: 131.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 152.15.113.5 at 2017-12-04 20:19:50 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (407.0ms)
+Completed 200 OK in 589ms (Views: 574.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 20:19:54 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (200.1ms)
+  Rendered characters/new.html.erb within layouts/application (202.2ms)
+Completed 500 Internal Server Error in 241ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= options_from_collection_for_select(@s, 'id', 'name', @selected.id) %>
+    70: </p>
+    71: 
+    72: 
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb__3059738704290106121_70329066340480'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb__3059738704290106121_70329066340480'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___1456361447778489275_70329065987860'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 20:20:15 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (28.9ms)
+  Rendered characters/new.html.erb within layouts/application (30.7ms)
+Completed 500 Internal Server Error in 35ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    66: 
+    67: <p>
+    68:   <%= f.label :race_id %><br>
+    69:   <%= options_from_collection_for_select(@s, 'id', 'name', @selected.id) %>
+    70: </p>
+    71: 
+    72: 
+  
+app/views/characters/_form.html.erb:69:in `block in _app_views_characters__form_html_erb__3059738704290106121_19186960'
+app/views/characters/_form.html.erb:1:in `_app_views_characters__form_html_erb__3059738704290106121_19186960'
+app/views/characters/new.html.erb:3:in `_app_views_characters_new_html_erb___1456361447778489275_19623440'
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 20:20:49 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  Rendered characters/_form.html.erb (5.1ms)
+  Rendered characters/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 125ms (Views: 123.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-04 20:20:56 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 177ms (Views: 175.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/races" for 152.15.113.5 at 2017-12-04 20:20:58 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#index as HTML
+  Rendering races/index.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered races/index.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 204ms (Views: 200.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/races/new" for 152.15.113.5 at 2017-12-04 20:21:01 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#new as HTML
+  Rendering races/new.html.erb within layouts/application
+  Rendered races/_form.html.erb (11.8ms)
+  Rendered races/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 119ms (Views: 116.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/races" for 152.15.113.5 at 2017-12-04 20:21:05 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#index as HTML
+  Rendering races/index.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered races/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 123ms (Views: 120.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/races/1" for 152.15.113.5 at 2017-12-04 20:21:07 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering races/show.html.erb within layouts/application
+  Rendered races/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 179ms (Views: 168.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/races/2" for 152.15.113.5 at 2017-12-04 20:21:14 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by RacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering races/show.html.erb within layouts/application
+  Rendered races/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 235ms (Views: 231.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-04 20:24:12 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 508ms (Views: 489.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-04 20:24:13 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (129.4ms)
+  Rendered characters/new.html.erb within layouts/application (131.3ms)
+Completed 200 OK in 178ms (Views: 175.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/characters" for 152.15.113.5 at 2017-12-04 20:24:18 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QbWEZ0qgU4yMrG/L2Bou0gpsSmlTlcsbPenQuPrRbMtTAS5tQszE9JSyZOm+0UYcQUYR6WzMd2Pk47pxvpNwqA==", "character"=>{"name"=>""}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (10.3ms)
+  Rendered characters/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 68ms (Views: 61.7ms | ActiveRecord: 0.6ms)
+
+

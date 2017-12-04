@@ -1,4 +1,6 @@
 class Race < ApplicationRecord
+    has_many :characters
+    
     validates :name, presence: true, length: { minimum: 1 }
     validates :block, presence: true
     validates :heavyArmor, presence: true
