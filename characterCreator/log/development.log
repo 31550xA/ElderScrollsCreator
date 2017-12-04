@@ -2426,3 +2426,214 @@ Completed 200 OK in 68ms (Views: 61.7ms | ActiveRecord: 0.6ms)
 >>>>>>> master
 
 
+Started GET "/" for 127.0.0.1 at 2017-12-04 15:52:01 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4933.1ms)
+Completed 200 OK in 5090ms (Views: 5076.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:52:10 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.6ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (216.7ms)
+  Rendered characters/new.html.erb within layouts/application (219.9ms)
+Completed 200 OK in 286ms (Views: 250.6ms | ActiveRecord: 6.5ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:52:29 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7DYrGtHPDkLyw+tXfArfX8JYgUfsRyVPcLzNbhQlYmXMREYVnxKmgW39IPO2W8daI3ny8omZlYlc7heahiYGkA==", "character"=>{"name"=>"oih"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.9ms)
+  Rendered characters/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 60ms (Views: 56.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:53:16 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.2ms)
+  Rendered characters/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/welcome/index" for 127.0.0.1 at 2017-12-04 15:53:21 -0500
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 60ms (Views: 57.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:53:28 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tMVF7XgoMYX7M8XlI2tncvh/rasntMQyTr6231futZAekLjW50lF+qzZJP9sEMVvjgMC+87jGzHA7/paosFs1w==", "character"=>{"name"=>"asdf", "gender"=>"Apache Attack Helicopter", "race"=>"imperial"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "imperial" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:53:30 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (6.1ms)
+  Rendered characters/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:53:39 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Vxox5ZRCbDbv/Arz4kxaNig/96NpugfgTlrPcJTEE1b9T8zeCyMYSbgW6+mtN/grXkNY84Dt2OPAC4P1YevKEQ==", "character"=>{"name"=>"asdf"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (6.1ms)
+  Rendered characters/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 65ms (Views: 61.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:53:47 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (4.3ms)
+  Rendered characters/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:53:49 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/E00WBcjfPYGENU+LeUoAX1kWIUgMJlcySbtoZHEEfBWGMljiEIIiVH6NCRinoocCxj31clnRl9Hd6EkZOvItw==", "character"=>{"name"=>"asdf"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.6ms)
+  Rendered characters/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 49ms (Views: 47.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:54:19 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.6ms)
+  Rendered characters/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 34ms (Views: 31.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:54:27 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z3KeqeNFI8fsM0BKnUAddMjUGuQuI8eA0i/iF+te+U/NJ2OSfCRXuLvZoVDSO79pvqi1tMd0GINcfq6SHnEgCA==", "character"=>{"name"=>"asdf", "gender"=>"Apache Attack Helicopter", "race"=>"dunmer"}, "race_id"=>{"0"=>"2"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "dunmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:57:13 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (3.7ms)
+  Rendered characters/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:57:18 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8m12+04cMb5B3WcB7hsNx5c4zmgnfKhc+Gznrw7WuqBYOIvA0X1FwRY3hhuhYK/a4URhOM4rd192Pasq+/lj5w==", "character"=>{"name"=>"asdf", "gender"=>"Woman", "race"=>"dunmer"}, "race_id"=>{"0"=>"2"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "dunmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:57:19 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (4.2ms)
+  Rendered characters/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 48ms (Views: 45.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:57:22 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f+VegcE36wSheu2ize4DhlgdPcNOil7IMKLh9HJ0MUTVsKO6Xlafe/aQDLiClaGbLmGSk6fdgcu+861xh1voAw==", "character"=>{"name"=>"asdf", "gender"=>"Woman", "race"=>"dunmer"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "dunmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:57:26 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.3ms)
+  Rendered characters/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:57:30 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KiYTowrY09NUNvpUeThU3RCM0+a+KJ/mRj/u4Ke7gIWAc+6YlbmnrAPcG042Q/bAZvB8tld/QOXIbqJlUpRZwg==", "character"=>{"name"=>"asdf", "gender"=>"Woman", "race"=>"bosmer"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "bosmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:57:31 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (4.2ms)
+  Rendered characters/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 46ms (Views: 44.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:57:50 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mC4zMQTR0bljoGRaWmAKwK1dpURJJ3LUXHsgBOeNrqYye84Km7ClxjRKhUAVG6jd2yEKFKBwrdfSKmyBEqJ34Q==", "character"=>{"name"=>"asdf", "gender"=>"Androgynous", "race"=>"bosmer"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "bosmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
+Started GET "/characters/new" for 127.0.0.1 at 2017-12-04 15:57:52 -0500
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.2ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (5.4ms)
+  Rendered characters/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 36ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/characters" for 127.0.0.1 at 2017-12-04 15:58:20 -0500
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0IC9v3AbvwBOU/8kTht+mLPP+OgJPpD8PJs+C7Wz5g161UCE73rLfxm5Hj4BYNyFxbNXuOBpT/+yynKOQJw/Sg==", "character"=>{"name"=>"asdf", "gender"=>"Androgynous", "race"=>"bosmer"}, "race_id"=>{"0"=>"1"}, "commit"=>"Create Character"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "bosmer" which is an instance of String(#70164318420720)):
+  
+app/controllers/characters_controller.rb:11:in `create'
