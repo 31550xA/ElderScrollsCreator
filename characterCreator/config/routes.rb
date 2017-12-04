@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :characters do
     resources :skillset
   end
+  resources :races
   
   root 'welcome#index'
 

@@ -1,0 +1,101 @@
+<%= form_for @race do |f| %>
+  
+  <% if @race.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@race.errors.count, "error") %>
+        prohibited this race from being saved:
+      </h2>
+      <ul>
+        <% @race.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  
+  <h2>Default Skill Levels</h2>
+  
+  <p>
+    <%= f.label :block, 'Block' %>
+    <%= f.number_field :block, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :heavyArmor, 'Heavy Armor' %>
+    <%= f.number_field :heavyArmor, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :oneHanded, 'One Handed' %>
+    <%= f.number_field :oneHanded, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :smithing, 'Smithing' %>
+    <%= f.number_field :smithing, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :twoHanded, 'Two Handed' %>
+    <%= f.number_field :twoHanded, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :archery, 'Archery' %>
+    <%= f.number_field :archery, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :alchemy, 'Alchemy' %>
+    <%= f.number_field :alchemy, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :lightArmor, 'Light Armor' %>
+    <%= f.number_field :lightArmor, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :lockPicking, 'Lock Picking' %>
+    <%= f.number_field :lockPicking, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :pickPocket, 'Pick Pocket' %>
+    <%= f.number_field :pickPocket, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :sneak, 'Sneak' %>
+    <%= f.number_field :sneak, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :speech, 'Speech' %>
+    <%= f.number_field :speech, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :alteration, 'Alteration' %>
+    <%= f.number_field :alteration, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :conjuration, 'Conjuration' %>
+    <%= f.number_field :conjuration, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :destruction, 'Destruction' %>
+    <%= f.number_field :destruction, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :enchanting, 'Enchanting' %>
+    <%= f.number_field :enchanting, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :illusion, 'Illusion' %>
+    <%= f.number_field :illusion, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  <p>
+    <%= f.label :restoration, 'Restoration' %>
+    <%= f.number_field :restoration, in: 1.0..100.0, step: 1.0, value: 15 %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+  
+<% end %>

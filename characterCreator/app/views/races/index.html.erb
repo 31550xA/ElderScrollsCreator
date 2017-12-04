@@ -1,0 +1,31 @@
+<h1>Listing Races</h1>
+
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Last Edited</th>
+
+  </tr>
+
+  <% @races.each do |race| %>
+    <tr>
+      <td><%= race.name %></td>
+      <td><%= race.updated_at %></td>
+      <td><%= link_to 'Show', race_path(race) %></td>
+      <td><%= link_to 'Edit', edit_race_path(race) %></td>
+      <td><%= link_to 'Destroy',
+                                race_path(race),
+                                method: :delete,
+                                data: {confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p>
+  <%= link_to 'New Race', new_race_path, :class => 'btn btn-primary' %>
+</p>
+<p>
+  <%= link_to 'Character List', characters_path, :class => 'btn btn-primary' %>
+</p>
+
