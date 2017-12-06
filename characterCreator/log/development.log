@@ -2637,3 +2637,132 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 ActiveRecord::AssociationTypeMismatch (Race(#70164390927740) expected, got "bosmer" which is an instance of String(#70164318420720)):
   
 app/controllers/characters_controller.rb:11:in `create'
+Started GET "/" for 152.15.113.5 at 2017-12-06 20:28:20 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (361.6ms)
+Completed 200 OK in 3423ms (Views: 3415.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-06 20:28:27 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mCACHE Race Load (0.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (280.7ms)
+  Rendered characters/new.html.erb within layouts/application (283.3ms)
+Completed 200 OK in 405ms (Views: 356.8ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/welcome/index" for 152.15.113.5 at 2017-12-06 20:28:29 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 137ms (Views: 135.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-06 20:28:31 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.5ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mCACHE Race Load (0.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (16.0ms)
+  Rendered characters/new.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 190ms (Views: 186.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/welcome/index" for 152.15.113.5 at 2017-12-06 20:28:32 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 214ms (Views: 212.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-06 20:28:52 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 68ms (Views: 65.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-06 20:28:55 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  [1m[36mCACHE Race Load (0.0ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (8.2ms)
+  Rendered characters/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 153ms (Views: 151.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-06 20:29:25 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (10.7ms)
+  Rendered characters/new.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 70ms (Views: 67.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters/new" for 152.15.113.5 at 2017-12-06 20:30:13 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#new as HTML
+  Rendering characters/new.html.erb within layouts/application
+  [1m[36mRace Load (0.4ms)[0m  [1m[34mSELECT "races".* FROM "races"[0m
+  Rendered characters/_form.html.erb (12.2ms)
+  Rendered characters/new.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 100ms (Views: 97.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/characters" for 152.15.113.5 at 2017-12-06 20:30:22 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ucpemUX+dA2IVXgngy0NQUpxG73Wb3cFcs4Ex30MsPFYbAlrJuYtHpbXfFLRxikCxkB0c47N2oTym1o6AYo01A==", "character"=>{"name"=>"test3", "gender"=>"Apache Attack Helicopter", "race"=>"test1"}, "commit"=>"Create Character"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.8ms)[0m  [1m[32mINSERT INTO "characters" ("name", "gender", "race", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "test3"], ["gender", "Apache Attack Helicopter"], ["race", "test1"], ["created_at", "2017-12-06 20:30:22.205077"], ["updated_at", "2017-12-06 20:30:22.205077"]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to https://itsc3155rubyprojects-ddara.c9users.io/characters
+Completed 302 Found in 22ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/characters" for 152.15.113.5 at 2017-12-06 20:30:22 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#index as HTML
+  Rendering characters/index.html.erb within layouts/application
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT "characters".* FROM "characters"[0m
+  Rendered characters/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/characters/4" for 152.15.113.5 at 2017-12-06 20:30:25 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCharacter Load (0.3ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."name" = ? LIMIT ?[0m  [["name", "test1"], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 171ms (Views: 162.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/characters/4" for 152.15.113.5 at 2017-12-06 20:30:43 +0000
+Cannot render console from 152.15.113.5! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by CharactersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mCharacter Load (0.4ms)[0m  [1m[34mSELECT  "characters".* FROM "characters" WHERE "characters"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mRace Load (0.3ms)[0m  [1m[34mSELECT  "races".* FROM "races" WHERE "races"."name" = ? LIMIT ?[0m  [["name", "test1"], ["LIMIT", 1]]
+  Rendering characters/show.html.erb within layouts/application
+  Rendered characters/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 63ms (Views: 58.2ms | ActiveRecord: 0.7ms)
+
+

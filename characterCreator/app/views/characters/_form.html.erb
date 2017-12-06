@@ -65,7 +65,8 @@
 </p>
 
 <p>
-  <%= collection_select(:race_id, 0, Race.all, :id, :name) %>
+  <%= f.label :race, 'race' %>
+  <%= f.collection_select :race, Race.all, :name, :name %>
 </p>
 
 

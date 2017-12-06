@@ -19,6 +19,8 @@ class CharactersController < ApplicationController
     
     def show
         @character = Character.find(params[:id])
+        
+        @race = Race.find_by_name(@character.race)
     end
     
     def edit 
