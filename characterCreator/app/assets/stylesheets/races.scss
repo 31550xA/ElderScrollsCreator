@@ -1,3 +1,25 @@
 // Place all the styles related to the Races controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body,
+html {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding-top: 40px;
+}
+
+td,
+th {
+  border: 1px solid white;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 20px;
+  padding: 10px;
+}
