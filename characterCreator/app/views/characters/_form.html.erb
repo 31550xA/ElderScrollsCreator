@@ -14,13 +14,16 @@
   </div>
 <% end %>
 
-<h3>
-<%= f.label :name, class: "formText" %>
-</h3>
-<p>
 
-  <%= f.text_field :name, class: "textInput"%>
-</p>
+
+  <div class="form-group row">
+  <h3>  <%= f.label :name, class: "formText" %> </h3>
+    <div class="centerShit">
+      <%= f.text_field :name, class: "textInput form-control"%>
+    </div>
+  </div>
+
+
 <h3>
   <%= f.label :gender %>
 </h3>

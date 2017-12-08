@@ -16,17 +16,23 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-
-html, body {
-background-color: black;
-color: white;
-
+body,
+html {
+  background-color: black;
+  color: white;
 }
 
 .formText {
-color: white;
+  color: white;
 }
 
 .textInput {
   color: black;
+}
+
+.centerShit {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 256px;
 }
