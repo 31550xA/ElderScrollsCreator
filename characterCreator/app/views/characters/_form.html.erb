@@ -14,21 +14,19 @@
   </div>
 <% end %>
 
-
-
-  <div class="form-group row">
-  <h3>  <%= f.label :name, class: "formText" %> </h3>
-    <div class="centerShit">
-      <%= f.text_field :name, class: "textInput form-control"%>
-    </div>
+<div class="form-group row">
+  <h3>
+    <%= f.label :name, class: "formText" %>
+  </h3>
+  <div class="centerShit">
+    <%= f.text_field :name, class: "textInput form-control"%>
   </div>
-
+</div>
 
 <h3>
   <%= f.label :gender %>
 </h3>
 <p>
-
   <%= f.radio_button :gender, 'Androgynous', class: "formText" %><br>
   <%= f.label :gender, 'Androgynous', :value => 'Androgynous', class: "formText" %><br>
   <%= f.radio_button :gender, 'Man' , class: "formText"%><br>
@@ -38,9 +36,11 @@
   <%= f.radio_button :gender, 'Apache Attack Helicopter', class: "formText" %><br>
   <%= f.label :gender, 'Apache Attack Helicopter', :value => 'Apache Attack Helicopter' , class: "formText"%><br>
 </p>
+
 <h3>
   <%= f.label :race , class: "formText"%>
 </h3>
+
 <p>
   <%= f.radio_button :race, 'altmer' , class: "formText"%>
   <%= f.label :race, 'Altmer (High Elf)', :value => 'altmer' , class: "formText"%><br>
@@ -71,16 +71,17 @@
 
   <%= f.radio_button :race, 'orsimer' , class: "formText"%>
   <%= f.label :race, 'Orsimer (Ork)', :value => 'orsimer' , class: "formText"%><br>
-
-
 </p>
+
+<br/>
 
 <p>
-  <%= f.label :race, 'race' , class: "formText"%>
-  <%= f.collection_select :race, Race.all, :name, :name , class: "formText"%>
+  <%= f.label :race, 'Your Races' , class: "formText"%>
+  <%= f.collection_select :race, Race.all, :name, :name , {class: "formText dropdown"} %>
 </p>
 
-<br />
+<br/>
+
 <p>
   <%= f.submit 'Create Character' , class: "btn btn-success"%>
 </p>
