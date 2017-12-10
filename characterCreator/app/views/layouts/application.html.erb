@@ -9,6 +9,14 @@
   </head>
 
   <body>
+    <!-- Navbar -->
+    <!-- <%= navbar fixed: :top do %>
+    <%= navbar_header brand: 'ESCreator', brand_link: '/' %>
+    <% end %> -->
+    <nav class="navbar navbar-fixed-top navbar-inverse bg-inverse">
+<%= link_to "CharacterCreator", root_path , class: "navbar-brand"%>
+</nav>
+    <!-- End navbar -->
     <%= yield %>
   </body>
 </html>
