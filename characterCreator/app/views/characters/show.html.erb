@@ -12,8 +12,85 @@
     <strong>Race/Class: </strong>
     <%= @character.race %>
 </p>
+
+<br />
 <p>
-    <strong>Block stat from Race </strong>
-    <%= @race.block %>
+  <strong>Block:</strong>
+  <%= @character.skillset.block %>
 </p>
+<p>
+    <strong>Heavy Armor: </strong>
+    <%= @character.skillset.heavyArmor %>
+</p>
+<p>
+    <strong>One Handed: </strong>
+    <%= @character.skillset.oneHanded %>
+</p>
+<p>
+    <strong>Smithing: </strong>
+    <%= @character.skillset.smithing %>
+</p>
+<p>
+    <strong>Two Handed: </strong>
+    <%= @character.skillset.twoHanded %>
+</p>
+<p>
+    <strong>Archery: </strong>
+    <%= @character.skillset.archery %>
+</p>
+<p>
+    <strong>Alchemy: </strong>
+    <%= @character.skillset.alchemy %>
+</p>
+<p>
+    <strong>Light Armor: </strong>
+    <%= @character.skillset.lightArmor %>
+</p>
+<p>
+    <strong>Lock Picking: </strong>
+    <%= @character.skillset.lockPicking %>
+</p>
+<p>
+    <strong>Pick Pocket: </strong>
+    <%= @character.skillset.pickPocket %>
+</p>
+<p>
+    <strong>Sneak: </strong>
+    <%= @character.skillset.sneak %>
+</p>
+<p>
+    <strong>Speech: </strong>
+    <%= @character.skillset.speech %>
+</p>
+<p>
+    <strong>Alteration: </strong>
+    <%= @character.skillset.alteration %>
+</p>
+<p>
+    <strong>Conjuration: </strong>
+    <%= @character.skillset.conjuration %>
+</p>
+<p>
+    <strong>Destruction: </strong>
+    <%= @character.skillset.destruction %>
+</p>
+<p>
+    <strong>Enchanting: </strong>
+    <%= @character.skillset.enchanting %>
+</p>
+<p>
+    <strong>Illusion: </strong>
+    <%= @character.skillset.illusion %>
+</p>
+<p>
+    <strong>Restoration: </strong>
+    <%= @character.skillset.restoration %>
+</p>
+
+<br />
+<p>
+  <%= link_to 'Edit Skills', edit_character_skillset_path(@character, @character.skillset) %>
+</p>
+
+
 <%= link_to 'Character List', characters_path %>

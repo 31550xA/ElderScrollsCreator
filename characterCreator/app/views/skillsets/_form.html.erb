@@ -1,78 +1,94 @@
-<h2>Adjust your skill levels</h2>
+<%= form_for [@character, @character.skillset]  do |f| %>
+    <% if @character.skillset.errors.any? %>
+        <div id="error_explanation">
+            <h2>
+                <%= pluralize(@race.errors.count, "error") %>
+                prohibited this race from being saved:
+            </h2>
+            <ul>
+                <% @race.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+            </ul>
+        </div>
+    <% end %>
 
-<%= form_for([@character, @character.skillset.build]) do |f| %>
+    <h2>Adjust your skill levels</h2>
+<div class="centerShit">
     <p>
         <%= f.label :block, 'Block' %>
-        <%= number_field(:skillset, :block, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :block, in: 1.0..100.0, step: 1.0, value: @character.skillset.block, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :heavyArmor, 'Heavy Armor' %>
-        <%= number_field(:skillset, :heavyArmor, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :heavyArmor, in: 1.0..100.0, step: 1.0, value: @character.skillset.heavyArmor, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :oneHanded, 'One Handed' %>
-        <%= number_field(:skillset, :oneHanded, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :oneHanded, in: 1.0..100.0, step: 1.0, value: @character.skillset.oneHanded, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :smithing, 'Smithing' %>
-        <%= number_field(:skillset, :smithing, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :smithing, in: 1.0..100.0, step: 1.0, value: @character.skillset.smithing, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :twoHanded, 'Two Handed' %>
-        <%= number_field(:skillset, :twoHanded, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :twoHanded, in: 1.0..100.0, step: 1.0, value: @character.skillset.twoHanded, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :archery, 'Archery' %>
-        <%= number_field(:skillset, :archery, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :archery, in: 1.0..100.0, step: 1.0, value: @character.skillset.archery, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :alchemy, 'Alchemy' %>
-        <%= number_field(:skillset, :alchemy, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :alchemy, in: 1.0..100.0, step: 1.0, value: @character.skillset.alchemy, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :lightArmor, 'Light Armor' %>
-        <%= number_field(:skillset, :lightArmor, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :lightArmor, in: 1.0..100.0, step: 1.0, value: @character.skillset.lightArmor, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :lockPicking, 'Lock Picking' %>
-        <%= number_field(:skillset, :lockPicking, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :lockPicking, in: 1.0..100.0, step: 1.0, value: @character.skillset.lockPicking, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :pickPocket, 'Pick Pocket' %>
-        <%= number_field(:skillset, :pickPocket, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :pickPocket, in: 1.0..100.0, step: 1.0, value: @character.skillset.pickPocket, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :sneak, 'Sneak' %>
-        <%= number_field(:skillset, :sneak, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :sneak, in: 1.0..100.0, step: 1.0, value: @character.skillset.sneak, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :speech, 'Speech' %>
-        <%= number_field(:skillset, :speech, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :speech, in: 1.0..100.0, step: 1.0, value: @character.skillset.speech, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :alteration, 'Alteration' %>
-        <%= number_field(:skillset, :alteration, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :alteration, in: 1.0..100.0, step: 1.0, value: @character.skillset.alteration, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :conjuration, 'Conjuration' %>
-        <%= number_field(:skillset, :conjuration, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :conjuration, in: 1.0..100.0, step: 1.0, value: @character.skillset.conjuration, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :destruction, 'Destruction' %>
-        <%= number_field(:skillset, :destruction, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :destruction, in: 1.0..100.0, step: 1.0, value: @character.skillset.destruction, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :enchanting, 'Enchanting' %>
-        <%= number_field(:skillset, :enchanting, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :enchanting, in: 1.0..100.0, step: 1.0, value: @character.skillset.enchanting, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :illusion, 'Illusion' %>
-        <%= number_field(:skillset, :illusion, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :illusion, in: 1.0..100.0, step: 1.0, value: @character.skillset.illusion, class: "textInput form-control") %>
     </p>
     <p>
         <%= f.label :restoration, 'Restoration' %>
-        <%= number_field(:skillset, :restoration, in: 1.0..100.0, step: 1.0) %>
+        <%= number_field(:skillset, :restoration, in: 1.0..100.0, step: 1.0, value: @character.skillset.restoration, class: "textInput form-control") %>
     </p>
+</div>
+<br />
     <p>
         <%= f.submit %>
     </p>
