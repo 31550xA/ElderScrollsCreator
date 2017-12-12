@@ -89,8 +89,10 @@
 
 <br />
 <p>
-  <%= link_to 'Edit Skills', edit_character_skillset_path(@character, @character.skillset) %>
+  <%= link_to 'Edit Skills', edit_character_skillset_path(@character, @character.skillset), class: "btn btn-success" %>
 </p>
 
-
-<%= link_to 'Character List', characters_path %>
+<br />
+<p>
+    <%= link_to 'Character List', characters_path, :class => 'btn btn-primary' %>
+</p>
