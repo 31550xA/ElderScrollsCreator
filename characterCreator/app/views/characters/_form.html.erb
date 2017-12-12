@@ -78,7 +78,7 @@ comment out race radio buttons-->
 
 <p>
   <%= f.label :race, 'Your Races' , class: "formText"%>
-  <%= f.collection_select :race, Race.all, :name, :name , {class: "dropdownText dropdown"} %>
+  <%= f.collection_select :race, Race.all, :name, :name , {},{ :class => "form-control centerShit"} %>
 </p>
 
 <br/>
