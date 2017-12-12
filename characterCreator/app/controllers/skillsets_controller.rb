@@ -17,7 +17,7 @@ class SkillsetsController < ApplicationController
         @character = Character.find(params[:character_id])
         @skillset = @character.skillset
          
-        if @skillset.update_attributes(params[:skillset])
+        if @skillset.update_attributes(skillset_params)
             redirect_to @character
         else
             render 'edit'
@@ -31,6 +31,6 @@ class SkillsetsController < ApplicationController
     end
     private
         def skillset_params
-            params.require(:skillset).permit(:character_id, :block, :heavyArmor, :oneHanded, :smithing, :twoHanded, :archery, :alchemy, :lightArmor, :lockPicking, :pickPocket, :sneak, :speech, :alteration, :conjuration, :destruction, :enchanting, :illusion, :restoration)
+            params.require(:skillset).permit(:block, :heavyArmor, :oneHanded, :smithing, :twoHanded, :archery, :alchemy, :lightArmor, :lockPicking, :pickPocket, :sneak, :speech, :alteration, :conjuration, :destruction, :enchanting, :illusion, :restoration)
         end
 end
