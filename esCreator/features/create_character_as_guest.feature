@@ -1,1 +1,0 @@
-Feature: Create a character as a guest
