@@ -50,7 +50,7 @@ git clone http://www.github.com/31550xA/ElderScrollsCreator/
 Get into the esCreator directory:
 
 ```
-cd /ElderScrollsCreator/esCreator
+cd /ElderScrollsCreator/characterCreator
 ```
 
 Run the necessary commands to install all dependencies:
